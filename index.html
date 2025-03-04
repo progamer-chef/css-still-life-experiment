@@ -1,0 +1,71 @@
+<style>
+  
+    @font-face {
+    src: url(StandingRoomOnlyNF.otf);
+    font-family: "standing-room";
+  }
+  
+.cylinder-container {
+    perspective: 200px; /* Creates depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.cylinder-text {
+    display: flex;
+    position: relative;
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    animation: rotateCylinder 5s linear infinite;
+}
+
+.cylinder-text span {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+    transform-origin: center center -100px; /* Distance from center */
+}
+
+.cylinder-text span:nth-child(1) { transform: rotateY(0deg); }
+.cylinder-text span:nth-child(2) { transform: rotateY(16deg); }
+.cylinder-text span:nth-child(3) { transform: rotateY(32deg); }
+.cylinder-text span:nth-child(4) { transform: rotateY(48deg); }
+.cylinder-text span:nth-child(5) { transform: rotateY(72deg); }
+.cylinder-text span:nth-child(6) { transform: rotateY(84deg); }
+.cylinder-text span:nth-child(7) { transform: rotateY(96deg); }
+.cylinder-text span:nth-child(8) { transform: rotateY(108deg); }
+.cylinder-text span:nth-child(9) { transform: rotateY(120deg); }
+.cylinder-text span:nth-child(10) { transform: rotateY(132deg); }
+.cylinder-text span:nth-child(11) { transform: rotateY(144deg); }
+
+.line2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+}
+  
+</style>
+
+<div class="cylinder-container">
+    <div class="cylinder-text">
+      <div class="line1">
+        <span>C</span>
+        <span>A</span>
+        <span>F</span>
+        <span>É</span>
+      </div>
+      <div class="line2">
+        <span>B</span>
+        <span>U</span>
+        <span>S</span>
+        <span>T</span>
+        <span>E</span>
+        <span>L</span>
+        <span>O</span>
+      </div>
+    </div>
+</div>
